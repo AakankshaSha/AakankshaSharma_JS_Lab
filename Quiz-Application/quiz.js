@@ -50,8 +50,8 @@ function QuestionAnswer(questionObj, answerChoicesObj, correctAnswerObj) {
     this.correctAnswerObj = correctAnswerObj;
 
     this.isItACorrectAnswer = function (userSelectedAnswer) {
-        const boolValue1 = (userSelectedAnswer === correctAnswerObj.answerText) ? true : false;
-        return boolValue1;
+        const booleanValue1 = (userSelectedAnswer === correctAnswerObj.answerText) ? true : false;
+        return booleanValue1;
     }
 }
 
@@ -126,8 +126,8 @@ function QuizApplication(qaArray) {
     }
 
     this.isThisTheLastQuestion = function () {
-        const boolValue2 = (this.pageIndex === this.qaArray.length - 1) ? true : false;
-        return boolValue2;
+        const booleanValue2 = (this.pageIndex === this.qaArray.length - 1) ? true : false;
+        return booleanValue2;
     }
 
     this.displayQuizPage = function () {
